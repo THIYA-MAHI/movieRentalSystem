@@ -13,6 +13,17 @@ namespace movieRentalSystem
         public string Director { get; set; }
         public decimal Rentalprice {  get; set; }
 
-        
+        public Movie(int movieId, string title, string director, decimal rentalprice)
+        {
+            MovieId = movieId;
+            Title = title;
+            Director = director;
+            Rentalprice = rentalprice;
+        }
+
+        public override string ToString()
+        {
+            return $"ID: {MovieId}, Title: {Title}, Director: {Director}, RentalPrice: {RentalPrice}";
+        }
     }
 }
