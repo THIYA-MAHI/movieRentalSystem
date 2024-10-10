@@ -23,7 +23,7 @@ namespace movieRentalSystem
 
         public override string ToString()
         {
-            return $"ID: {MovieId}, Title: {Title}, Director: {Director}, RentalPrice: {RentalPrice}";
+            return $"ID: {MovieId}, Title: {Title}, Director: {Director}, RentalPrice: {Rentalprice}";
         }
     }
 }
